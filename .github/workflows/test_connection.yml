@@ -1,6 +1,6 @@
 name: Test PostgreSQL Connection
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   test-connection:
