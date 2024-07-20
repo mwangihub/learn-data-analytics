@@ -1,0 +1,83 @@
+# Django is a high-level Python web framework 
+# that encourages rapid development and clean, 
+# pragmatic design. Built by experienced developers, 
+# it takes care of much of the hassle of web 
+# development, so you can focus on writing your 
+# app without needing to reinvent the wheel. 
+# It’s free and open source. 
+# https://www.djangoproject.com/
+django
+
+# Django REST framework is a powerful and 
+# flexible toolkit for building Web APIs.
+djangorestframework
+
+# TinyMCE is an online rich-text editor released 
+# as open-source software under the GNU General 
+# Public License version 2 or later. It converts 
+# HTML textarea fields, or other designated HTML 
+# elements, into editor instances.
+# https://django-tinymce.readthedocs.io/en/latest/installation.html
+django-tinymce
+
+# For linting html and django in general
+djlint
+
+# Load .env file
+django-environ
+
+daphne
+
+# Channels is a project that takes Django and extends 
+# its abilities beyond HTTP - to handle WebSockets, 
+# chat protocols, IoT protocols, and more. It’s built
+# on a Python specification called ASGI.
+# https://channels.readthedocs.io/en/latest/installation.html
+# pip install -U 'channels[daphne]'
+channels
+
+# Provides Django Channels channel layers that use Redis as a 
+# backing store.
+# There are two available implementations:
+#     - RedisChannelLayer is the original layer, and implements 
+#     channel and group handling itself.
+#     - RedisPubSubChannelLayer is newer and leverages Redis 
+#     Pub/Sub for message dispatch. This layer is currently 
+#     at Beta status, meaning it may be subject to breaking 
+#     changes whilst it matures.
+
+channels-redis
+
+django-cors-headers
+
+# Radically simplified static file serving for Python web apps
+# With a couple of lines of config WhiteNoise allows your web 
+# app to serve its own static files, making it a self-contained 
+# unit that can be deployed anywhere without relying on nginx, 
+# Amazon S3 or any other external service. (Especially useful 
+# on Heroku, OpenShift and other PaaS providers.)
+# https://whitenoise.readthedocs.io/en/stable/index.html
+whitenoise
+
+redis
+celery 
+
+# ----------- Celery ----------------------
+# The https://pypi.org/project/django-celery-results/ extension 
+# provides result backends using either the Django ORM, or the 
+# Django Cache framework.
+# INSTALLED_APPS = (
+#     ...,
+#     'django_celery_results',
+# )
+# python manage.py migrate django_celery_results
+# django-celery-results
+
+# ---- Starting the worker process ---------------
+# In a production environment you’ll want to run the worker in the 
+# background as a daemon - see Daemonization - but for testing and 
+# development it is useful to be able to start a worker instance by 
+# using the celery worker manage command, much as you’d use Django’s 
+# manage.py runserver:
+# celery -A proj worker -l INFO
+# celery --help

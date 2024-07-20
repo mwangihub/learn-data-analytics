@@ -1,0 +1,22 @@
+# Django is a high-level Python web framework 
+# that encourages rapid development and clean, 
+# pragmatic design. Built by experienced developers, 
+# it takes care of much of the hassle of web 
+# development, so you can focus on writing your 
+# app without needing to reinvent the wheel. 
+# It’s free and open source. 
+# https://www.djangoproject.com/
+django
+
+# Django REST framework is a powerful and 
+# flexible toolkit for building Web APIs.
+djangorestframework
+
+# TinyMCE is an online rich-text editor released 
+# as open-source software under the GNU General 
+# Public License version 2 or later. It converts 
+# HTML textarea fields, or other designated HTML 
+# elements, into editor instances.
+# https://django-tinymce.readthedocs.io/en/latest/installation.html
+
+django-tinymce
